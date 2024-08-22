@@ -1,16 +1,22 @@
 :root{
-    ---background-colr: #06bcc1;
+    ---background-colr:lightsalmon  ;
     --border: 1px solid black;
 }
 
 body{
     background: var(---background-colr);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container{
     width: 95%;
     height: 480px;
     display: flex;
+}
+.main{
+    flex: 1;
 }
 
 .quotes{
@@ -24,7 +30,7 @@ body{
     padding: 0 50px;
     color: gray;
     background-color: #f4edea;
-    border: 10px solid #f4d1aa;
+    border: 10px solid #11CAF0 ;
 }
 
 .quotes p, .quotes h3 {
@@ -40,5 +46,15 @@ body{
 }
 
 .btn-info{
+    font-size: 30px;
     border-radius: 10px;
+}
+
+footer{
+    background-color: #f4edea ;
+    text-align: center;
+    margin-top: auto;
+    padding: 20px 0 20px;
+
+
 }
